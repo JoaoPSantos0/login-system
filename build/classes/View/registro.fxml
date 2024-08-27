@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="553.0" prefWidth="746.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegistroController">
+    <stylesheets>
+        <URL value="@registro.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="textName" layoutX="449.0" layoutY="96.0" prefHeight="35.0" prefWidth="236.0" promptText="Nome" styleClass="Text" stylesheets="@registro.css" />
+      <TextField fx:id="textEmail" layoutX="449.0" layoutY="167.0" prefHeight="35.0" prefWidth="236.0" promptText="Email" styleClass="Text" stylesheets="@registro.css" />
+      <PasswordField fx:id="textPassword" layoutX="449.0" layoutY="245.0" prefHeight="35.0" prefWidth="236.0" promptText="Senha" styleClass="Text" stylesheets="@registro.css" />
+      <PasswordField fx:id="textConfirmPassword" layoutX="447.0" layoutY="325.0" prefHeight="35.0" prefWidth="236.0" promptText="Confirmar senha" styleClass="Text" stylesheets="@registro.css" />
+      <Button fx:id="btnBack" layoutX="433.0" layoutY="463.0" mnemonicParsing="false" onAction="#returnToLogin" prefHeight="43.0" prefWidth="108.0" styleClass="Button" stylesheets="@registro.css" text="Voltar" textFill="WHITE">
+         <font>
+            <Font name="DejaVu Sans Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSave" layoutX="557.0" layoutY="463.0" mnemonicParsing="false" onAction="#cadastrarUsuario" prefHeight="43.0" prefWidth="108.0" styleClass="Button" stylesheets="@registro.css" text="Salvar" textFill="WHITE">
+         <font>
+            <Font name="DejaVu Sans Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="447.0" layoutY="77.0" text="Nome" />
+      <Label layoutX="449.0" layoutY="148.0" text="Email" />
+      <Label layoutX="447.0" layoutY="226.0" text="Senha" />
+      <Label layoutX="452.0" layoutY="296.0" text="Confirme a senha" />
+      <AnchorPane prefHeight="555.0" prefWidth="356.0" styleClass="Painel2" stylesheets="@registro.css" />
+      <Label fx:id="labelInfo" layoutX="452.0" layoutY="433.0" prefHeight="19.0" prefWidth="225.0" textFill="#02fc24" />
+      <Label fx:id="labelInfo2" layoutX="445.0" layoutY="424.0" prefHeight="19.0" prefWidth="225.0" textFill="#fa0202" />
+   </children>
+</AnchorPane>

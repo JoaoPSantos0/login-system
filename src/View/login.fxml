@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="615.0" styleClass="Painel2" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="50.0" layoutY="25.0" prefHeight="550.0" prefWidth="516.0" styleClass="Painel" stylesheets="@login.css">
+         <children>
+            <Button fx:id="btnEnter" layoutX="160.0" layoutY="407.0" mnemonicParsing="false" onAction="#onClickEnter" prefHeight="44.0" prefWidth="114.0" styleClass="Button" stylesheets="@login.css" text="Entrar" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Sans Bold" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="userText" layoutX="160.0" layoutY="229.0" prefHeight="35.0" prefWidth="227.0" promptText="usuario" styleClass="Text" stylesheets="@login.css" />
+            <PasswordField fx:id="passwordText" layoutX="161.0" layoutY="329.0" prefHeight="35.0" prefWidth="227.0" promptText="senha" styleClass="Text" stylesheets="@login.css" />
+            <Button fx:id="btnRegister" layoutX="286.0" layoutY="407.0" mnemonicParsing="false" onAction="#onClickRegister" prefHeight="44.0" prefWidth="114.0" styleClass="Button" stylesheets="@login.css" text="Cadastrar" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Sans Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="200.0" layoutY="113.0" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Sans Bold" size="44.0" />
+               </font>
+            </Label>
+            <Label fx:id="infoLabel" layoutX="170.0" layoutY="380.0" prefHeight="19.0" prefWidth="198.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

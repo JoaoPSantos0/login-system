@@ -1,0 +1,26 @@
+.Painel{
+    -fx-background-color:linear-gradient(#9995de,#700979);
+    -fx-background-radius:40 40 40 40;
+    
+}
+
+
+.Painel2{
+    -fx-background-color:linear-gradient(#d9acdd,#9995de);
+   
+    
+}
+.Button{
+    -fx-background-color:linear-gradient(to right, #9796f0, #fbc7d4);
+    -fx-background-radius:40 40 40 40;
+    -fx-border-radius: 40 40 40 40;
+    
+}
+
+.Text{
+    -fx-border-color:linear-gradient(to right, #9796f0, #fbc7d4);
+    -fx-border-width:3;
+    -fx-background-radius:40 40 40 40;
+    -fx-border-radius: 40 40 40 40;
+    
+}
